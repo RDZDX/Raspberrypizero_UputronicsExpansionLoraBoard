@@ -3,6 +3,8 @@ How to setup meshtasticd on RaspberryPi ZeroW - "[ReadMe.txt](https://github.com
 
 Lora board:
 
+https://store.uputronics.com/products/raspberry-pizero-loratm-expansion-board
+
 ![alt text](https://rdzdx.github.io/Raspberrypizero_UputronicsExpansionLoraBoard/picture.jpg)
 
 Raspberry Pi Zero W:
