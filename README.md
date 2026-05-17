@@ -9,6 +9,10 @@ Raspberry Pi Zero W:
 
 ![alt text](https://rdzdx.github.io/Raspberrypizero_UputronicsExpansionLoraBoard/picture1.jpg)
 
+My system:
+
+![alt text](https://rdzdx.github.io/Raspberrypizero_UputronicsExpansionLoraBoard/picture3.jpg)
+
 Lora board specifications:
 
 ![alt text](https://rdzdx.github.io/Raspberrypizero_UputronicsExpansionLoraBoard/picture2.jpg)
