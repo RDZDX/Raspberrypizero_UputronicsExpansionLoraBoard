@@ -1,0 +1,33 @@
+python3 -m venv --system-site-packages .venv
+
+source .venv/bin/activate
+pip install --upgrade meshtastic
+pip install python-telegram-bot
+
+----------------------------------------------
+
+sudo vi /etc/systemd/system/meshtastic-telegram.service
+
+[Unit]
+Description=Meshtastic Telegram Bridge
+After=meshtasticd.service network-online.target
+Requires=meshtasticd.service
+Wants=network-online.target
+
+[Service]
+ExecStartPre=/bin/sleep 10
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/bin
+
+ExecStart=/home/pi/.venv/bin/python /home/pi/bin/message_forwarder.py
+
+Restart=always
+RestartSec=10
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+pi@raspberrypi:~/bin $
